@@ -17,10 +17,10 @@ function writePassword()
   passwordText.value="";
   var passwordLength = prompt('How long is your password (8-128)?');
   
-  if (passwordLength <8 || passwordLength > 128 )
+  if (passwordLength <8 || passwordLength > 128 ||isNaN(passwordLength) )
   {
     console.log(passwordLength);
-    alert('Password lenght is not within range');
+    alert('Please enter a number between 8 and 128');
     return writePassword();
   };
   
@@ -52,10 +52,10 @@ function writePassword()
     {
       temp += numbers;
     };
-
+    //checks if the user have selected one option
     if (inputCahr == false && inputLower == false && inputUpper == false && inputNum == false)
     {
-      alert("you must select one of the options")
+      alert("You must select one of the options")
       return writePassword();
     }
   //generates the random password
