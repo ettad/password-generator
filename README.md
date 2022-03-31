@@ -9,7 +9,7 @@ This application enables users to generate random passwords based on criteria th
 ![Webpage Screenshot](./assets/images/password-generator.JPG)
 
 
-## **Links To The Page**
+## **Links To The Page And Repository**
 
 [Project Web Page]( https://ettad.github.io/password-generator/)
 
